@@ -6,7 +6,11 @@ const Home = () => {
   const arr = [1,2,3,4];
   return (
     <div>
-      <Product />
+      {
+        arr.map((i) => (
+          <Product value={i} key={i} />
+        ))
+      }
     </div>
   )
 }
